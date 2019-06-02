@@ -3,10 +3,12 @@
     <p class="lead">
         Search for companies stock and save them up to 10
     </p>
-    <p class='button'>
-        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-danger btn-lg sign-up' %>
-    </p>
-    <p class='button'>
-        <%= link_to 'Log in', new_user_session_path, class: 'btn btn-danger btn-lg sign-up' %>
-    </p>
+    <% if !current_user %>
+        <p class='button'>
+            <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-danger btn-lg sign-up' %>
+        </p>
+        <p class='button'>
+            <%= link_to 'Log in', new_user_session_path, class: 'btn btn-danger btn-lg sign-up' %>
+        </p>
+    <% end %>
 </div>
