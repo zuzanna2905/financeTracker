@@ -44,3 +44,27 @@
       background-color: darken(#d9534f, 20%) !important;
     }
   }
+
+  .jumbotron {
+    text-align: center;
+    background-image: asset-url('meeting.JPG');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Helvetica Neue' !important;
+    font-stretch: expanded;
+    height: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+}
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.lead{
+  padding: 15px;
+}
